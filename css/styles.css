@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Cairo', sans-serif;
+}
+
+body{
+    background-color: lightblue;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 10px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.whiteFont{
+    color: white;
+}
+
+.mainImg{
+    width: 300px;
+    height: 400px;
+}
+
+.imgContainer{
+    margin: 150px 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: royalblue;
+    
+}
+
+
+.test{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IMAGENES INICIO */
+
+.card {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(-0%,-0%);
+    width: 300px;
+    height: 400px;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #ffc107;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+
+
+
