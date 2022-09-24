@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -17,14 +18,38 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="pages/news.html">NOTICIAS</a></li>
                 <li><a href="pages/shop.html">TIENDA</a></li>
-                <li><a href="pages/faqs.html">FAQs</a></li>
                 <li><a href="pages/contact.html">CONTACTO</a></li>
                 <li><a href="pages/about.html">NOSOTROS</a></li>
              </ul> 
         </nav>
-        <div class="whiteFont"><a href="" class="whiteFont" id="login">LOGIN</a></div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+LOGIN</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Logear</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>USUARIO: </p>
+        <p>CONTRASEÑA: </p>
+        <hr>
+        <a href="">Olvidé mi contraseña</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     </header>
     <main>
       <div id="linear"></div>
@@ -77,7 +102,10 @@
 
 
     
-    
+  <div id="linear"></div>
     <footer> <p> Ezequiel Cordoba - 2022 - Coderhouse</p></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

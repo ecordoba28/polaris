@@ -46,6 +46,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+    transition: color .7s;
 }
 
 nav ul li a:hover{
@@ -54,6 +55,7 @@ nav ul li a:hover{
 
 #logo{
     text-decoration: none;
+    transition: color .3s;
 }
 
 #logo:hover{
@@ -62,6 +64,7 @@ nav ul li a:hover{
 
 #login{
     text-decoration: none;
+    transition: color .3s;
 }
 
 #login:hover{
@@ -71,6 +74,11 @@ nav ul li a:hover{
 #linear{
     height: 1px;
     background-image: linear-gradient(to right, #00f2f5, #00d2ff, #72a3ff, #d65fcf, #e8055d);
+}
+
+.active{
+    border-bottom: 3px solid #00f2f5;
+    padding: 1px 8px;
 }
 
 /* MAIN ARTICLE */
@@ -177,7 +185,35 @@ nav ul li a:hover{
 /* 2ND ARTICLE */
 
 #news{
-    background-color: white;
+    background-color: #ea00d9;
 }
 
 
+/* NEWS SECTION */
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem ;
+}
+
+#newsTitle{
+    color: #ea00d9;
+}
+
+/*FOOTER */
+
+footer{
+    height: 50px;
+    background-color: #00000c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+
+}
