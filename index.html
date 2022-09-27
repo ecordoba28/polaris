@@ -8,52 +8,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div >
-            <a href="index.html" class="whiteFont" id="logo">POLARIS</a> 
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">INICIO</a></li>
-                <li><a href="pages/news.html">NOTICIAS</a></li>
-                <li><a href="pages/shop.html">TIENDA</a></li>
-                <li><a href="pages/contact.html">CONTACTO</a></li>
-                <li><a href="pages/about.html">NOSOTROS</a></li>
-             </ul> 
-        </nav>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-LOGIN</button>
+    <header class="container-fluid">
+      <!-- <div class="container d-flex flex-nowrap justify-content-between align-items-center navbar navbar-dark "> -->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Logear</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>USUARIO: </p>
-        <p>CONTRASEÑA: </p>
-        <hr>
-        <a href="">Olvidé mi contraseña</a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="row d-flex justify-content-between flex-nowrap align-items-center">
+          <div class="col">
+            <a href="index.html" class="whiteFont" id="logo">POLARIS</a> 
+          </div>
+          <nav class="col">
+            <ul class="d-flex flex-nowrap">
+                <li class="p-3"><a href="index.html" class="active">INICIO</a></li>
+                <li class="p-3"><a href="pages/news.html">NOTICIAS</a></li>
+                <li class="p-3"><a href="pages/shop.html">TIENDA</a></li>
+                <li class="p-3"><a href="pages/contact.html">CONTACTO</a></li>
+                <li class="p-3"><a href="pages/about.html">NOSOTROS</a></li>
+            </ul> 
+          </nav>
+          <div class="col d-flex justify-content-center align-items-center">
+            <button type="button" class="col btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              LOGIN</button>
+        
+                    <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Logear</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>USUARIO: </p>
+                      <p>CONTRASEÑA: </p>
+                      <hr>
+                      <a href="">Olvidé mi contraseña</a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+          
+
+        </div>
+      <!-- </div> -->
+        
     </header>
     <main>
       <div id="linear"></div>
         <article id="mainArticle">
+          
             <div class="test container">
               <div class="card">
                 <div class="image">
