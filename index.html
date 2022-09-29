@@ -7,108 +7,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');</style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="container-fluid">
-      <!-- <div class="container d-flex flex-nowrap justify-content-between align-items-center navbar navbar-dark "> -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center ms-5 me-5">
+      <div class="whiteFont" id="logo">POLARIS</div>
 
-        <div class="row d-flex justify-content-between flex-nowrap align-items-center">
-          <div class="col">
-            <a href="index.html" class="whiteFont" id="logo">POLARIS</a> 
-          </div>
-          <nav class="col">
-            <ul class="d-flex flex-nowrap">
-                <li class="p-3"><a href="index.html" class="active">INICIO</a></li>
-                <li class="p-3"><a href="pages/news.html">NOTICIAS</a></li>
-                <li class="p-3"><a href="pages/shop.html">TIENDA</a></li>
-                <li class="p-3"><a href="pages/contact.html">CONTACTO</a></li>
-                <li class="p-3"><a href="pages/about.html">NOSOTROS</a></li>
-            </ul> 
-          </nav>
-          <div class="col d-flex justify-content-center align-items-center">
-            <button type="button" class="col btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-              LOGIN</button>
-        
-                    <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Logear</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>USUARIO: </p>
-                      <p>CONTRASEÑA: </p>
-                      <hr>
-                      <a href="">Olvidé mi contraseña</a>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-                </div>
-          </div>
-          
+        <ul class="d-flex justify-content-center flex-wrap">
+          <li class="p-3 zoom "><a href="index.html" class="active p-2">INICIO</a></li>
+          <li class="p-3 zoom "><a href="pages/news.html" class="p-2">NOTICIAS</a></li>
+          <li class="p-3 zoom "><a href="pages/shop.html" class="p-2">TIENDA</a></li>
+          <li class="p-3 zoom "><a href="pages/contact.html" class="p-2">CONTACTO</a></li>
+          <li class="p-3 zoom "><a href="pages/about.html" class="p-2">NOSOTROS</a></li>
+        </ul>
 
-        </div>
-      <!-- </div> -->
-        
-    </header>
+        <div class="whiteFont">login</div>
+      
+    </nav>
+  </header>
+
+
+
     <main>
       <div id="linear"></div>
-        <article id="mainArticle">
-          
-            <div class="test container">
-              <div class="card">
-                <div class="image">
-                  <img src="img/stellaris.jpg"/>
-                </div>
-                <div class="details">
-                  <div class="center">
-                    <h1>Stellaris<br><span>Paradox Interactive</span></h1>
-                    <p>Explora una galaxia repleta de maravillas con este juego de ciencia ficción y gran estrategia de Paradox Development Studio. Interactúa con distintas especies alienígenas, descubre nuevos mundos y amplía el dominio de tu imperio. Cada nueva aventura ofrece posibilidades casi infinitas.</p>
-                  </div>
+      <div class="container-fluid" id="mainContent">
+        <div class="row d-flex justify-content-evenly align-items-center " id="mainArticle">
+            <div class="mainCard col-md-4 m-5">
+              <div class="image">
+                <img src="img/stellaris.jpg" class="img-fluid">
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Stellaris<br><span>Paradox Interactive</span></h1>
+                  <p>Explora una galaxia repleta de maravillas con este juego de ciencia ficción y gran estrategia de Paradox Development Studio. Interactúa con distintas especies alienígenas, descubre nuevos mundos y amplía el dominio de tu imperio. Cada nueva aventura ofrece posibilidades casi infinitas.</p>
                 </div>
               </div>
-                  <div class="card">
-                    <div class="image">
-                      <img src="img/redemption.jpg"/>
-                    </div>
-                    <div class="details">
-                      <div class="center">
-                        <h1>Red Dead Redemption 2<br><span>Rockstar Games</span></h1>
-                        <p>Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="image">
-                      <img src="img/nfs.jpg"/>
-                    </div>
-                    <div class="details">
-                      <div class="center">
-                        <h1>Need for Speed™ Payback<br><span>ELECTRONIC ARTS</span></h1>
-                        <p>Need for Speed™ Payback - Deluxe Edition te da una ventaja inicial. Destaca entre la multitud con artículos de personalización exclusivos y recibe descuentos en el juego, REP de bonificación y cinco cargamentos para empezar tu aventura.</p>
-                      </div>
-                    </div>
-                  </div>
             </div>
-        </article>             
-         
+            <div class="mainCard col-md-4 m-5">
+              <div class="image">
+                <img src="img/redemption.jpg" class="img-fluid">
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Red Dead Redemption 2<br><span>Rockstar Games</span></h1>
+                  <p>Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mainCard col-md-4 m-5">
+              <div class="image">
+                <img src="img/nfs.jpg" class="img-fluid">
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Need for Speed™ Payback<br><span>ELECTRONIC ARTS</span></h1>
+                  <p>Need for Speed™ Payback - Deluxe Edition te da una ventaja inicial. Destaca entre la multitud con artículos de personalización exclusivos y recibe descuentos en el juego, REP de bonificación y cinco cargamentos para empezar tu aventura.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </main>
 
-    <article class="container" id="news">
-      <div>
-          <h1>NOTICIAS</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo tempore ipsa laboriosam, error, placeat libero quibusdam architecto quas ducimus veniam aperiam blanditiis dolores fuga nihil, ratione neque illo repudiandae consequatur?</p>
+    <article class="container">
+
+      <div class="row mt-5">
+        <div class="col">
+          <h1 id="news">ULTIMAS NOTICIAS</h1>
+        </div>
       </div>
+      
+      <div class="row">
+        <div class="col col-sm-3">
+          <div class="row">
+            <div class="col">
+              <figure><img src="img/news/microsoftvssony.webp" alt="" class="img-fluid"></figure>
+              <div>Microsoft acusa a Sony de sabotear el crecimiento de Game Pass</div>
+            </div>
+            <div class="col">
+              <figure><img src="img/news/playstation.webp" alt="" class="img-fluid"></figure>
+              <div>Microsoft acusa a Sony de sabotear el crecimiento de Game Pass</div>
+            </div>
+            <div class="col">
+              <figure><img src="/img/news/microsoftvssony.webp" alt="" class="img-fluid"></figure>
+              <div>Microsoft acusa a Sony de sabotear el crecimiento de Game Pass</div>
+            </div>
+          </div>
   </article>
 
 
